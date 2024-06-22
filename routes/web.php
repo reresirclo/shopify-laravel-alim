@@ -20,5 +20,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('/install', [InstallController::class]);
-Route::get('/redir', [RedirController::class]);
+Route::get('/install', InstallController::class);
+Route::get('/redir', RedirController::class);

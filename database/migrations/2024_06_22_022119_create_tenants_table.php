@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tenants', function (Blueprint $table) {
             $table->id();
-            $table->string('domain');
+            $table->string('domain')->unique();
             $table->string('token');
             $table->timestamps();
         });
